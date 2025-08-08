@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Página de Inicio - Excursión a La Antigua Guatemala</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    :root {
+      --bs-primary: #7c4d1e;
+      --bs-secondary: #f9a825;
+      --bs-success: #388e3c;
+      --bs-info: #0288d1;
+      --bs-warning: #fbc02d;
+      --bs-danger: #d32f2f;
+      --bs-light: #fffde7;
+      --bs-dark: #263238;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="inicio.html">Antigua Excursión</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="inicio.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="atracciones.html">Atracciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="alojamiento.html">Alojamiento</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="bg-secondary text-white text-center py-5 mb-4">
+    <div class="container">
+      <h1 class="fw-bold">Bienvenido a la Excursión a La Antigua Guatemala</h1>
+      <p class="lead">Descubre la magia colonial, cultura y naturaleza en un solo lugar.</p>
+    </div>
+  </header>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Sobre la Excursión</h2>
+        <p>La Antigua Guatemala, Patrimonio de la Humanidad, está ubicada en el Valle de Panchoy. Es famosa por su arquitectura colonial, volcanes cercanos y coloridas calles empedradas.</p>
+      </div>
+      <div class="col-md-4">
+        <button type="button" class="btn btn-info w-100" data-bs-toggle="modal" data-bs-target="#infoModal">Ver más información</button>
+      </div>
+    </div>
+  </div>
+  <div class="container mb-5">
+    <div id="carouselAntigua" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="arco.jpeg" class="d-block w-100" alt="Arco de Santa Catalina">
+        </div>
+        <div class="carousel-item">
+          <img src="catedral.jpeg" class="d-block w-100" alt="Catedral de Antigua">
+        </div>
+        <div class="carousel-item">
+          <img src="volcan.jpeg" class="d-block w-100" alt="Volcán de fondo">
+        </div>
+        <div class="carousel-item">
+          <img src="calles.jpeg" class="d-block w-100" alt="Calles empedradas">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselAntigua" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselAntigua" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="infoModalLabel">Más sobre Antigua</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Antigua Guatemala es reconocida por su historia, cultura y belleza natural. ¡No te pierdas la oportunidad de visitarla!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+      <p>Desarrollado por: Diego Beteta García 9490-22-12878</p>
+      <p>Sergio Enrique Sánchez Sánchez 9490-21-1077</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
