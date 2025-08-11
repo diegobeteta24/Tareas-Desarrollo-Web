@@ -14,7 +14,7 @@ El sitio web fue reorganizado en tres páginas principales: **Inicio**, **Atracc
 ## Enlace del sitio web publicado
 [Enlace a la publicación en GitHub Pages](https://diegobeteta24.github.io/Tareas-Desarrollo-Web/excursion/inicio.html)
 
-## Estudiante responsable
+## Estudiantes responsables
 - Diego Beteta García 9490-22-12878
 - Sergio Enrique Sánche< Sánchez
 
