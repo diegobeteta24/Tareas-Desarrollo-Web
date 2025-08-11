@@ -16,6 +16,7 @@ El sitio web fue reorganizado en tres páginas principales: **Inicio**, **Atracc
 
 ## Estudiante responsable
 - Diego Beteta García 9490-22-12878
+- Sergio Enrique Sánche< Sánchez
 
 ---
 **Incluye todos los archivos necesarios para la entrega en Neftily.**
