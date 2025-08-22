@@ -1,6 +1,21 @@
 
 # Hoja de Trabajo 3 - Bootstrap
 
+## Hoja de Trabajo 4 - JavaScript + Bootstrap
+
+Se añadió una nueva sección en `javascript/` con:
+
+- Tres tablas de itinerarios con alternancia por botones (mostrar/ocultar via `display: none / table`).
+- Área de comentarios con selección aleatoria de nombres y comentarios (mínimo 10 de cada uno), mostrando 3 sin repetir.
+- Formulario de contacto con validación de campos y de email, mostrando un modal de confirmación usando Bootstrap y registrando los datos en la consola.
+
+Abrir demo: `javascript/itinerarios.html`
+
+Publicación (pendiente): https://diegobeteta24.github.io/Tareas-Desarrollo-Web/javascript/itinerarios.html
+
+Estudiante responsable:
+- Diego Beteta García 9490-22-12878
+
 ## Descripción de las mejoras y estilos aplicados
 El sitio web fue reorganizado en tres páginas principales: **Inicio**, **Atracciones** y **Alojamiento**. Se utilizó Bootstrap 5.3 para mejorar la apariencia y funcionalidad, implementando los siguientes componentes y características:
 
