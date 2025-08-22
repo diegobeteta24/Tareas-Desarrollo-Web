@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Itinerarios de Actividades</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/itinerarios.css" />
+  <style>
+    :root{ --bs-primary:#7c4d1e; --bs-secondary:#f9a825; --bs-success:#388e3c; --bs-info:#0288d1; --bs-warning:#fbc02d; --bs-danger:#d32f2f; --bs-light:#fffde7; --bs-dark:#263238; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Antigua Excursión</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="atracciones.html">Atracciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="alojamiento.html">Alojamiento</a></li>
+          <li class="nav-item"><a class="nav-link active" href="itinerarios.html">Itinerarios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 gradient-header text-white">
+    <div class="container text-center">
+      <h1 class="fw-bold mb-2">Itinerarios de Actividades</h1>
+      <p class="mb-0 op-85">Elige un plan y revisa comentarios destacados</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <section class="mb-4" aria-labelledby="itinerarios-title">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-3">
+        <h2 id="itinerarios-title" class="h4 mb-0">Itinerarios</h2>
+        <div class="btn-group" role="group">
+          <button id="btn-playa" class="btn btn-toggle active" onclick="showItinerary('tabla-playa')">Playa</button>
+          <button id="btn-montana" class="btn btn-toggle" onclick="showItinerary('tabla-montana')">Montaña</button>
+          <button id="btn-cultural" class="btn btn-toggle" onclick="showItinerary('tabla-cultural')">Cultural</button>
+        </div>
+      </div>
+      <div class="card shadow-sm rounded-4 overflow-hidden">
+        <div class="table-responsive">
+          <table id="tabla-playa" class="table align-middle mb-0 itinerary-table">
+            <thead class="table-light"><tr><th style="width:140px;">Hora</th><th>Actividad</th></tr></thead>
+            <tbody>
+              <tr><td>08:00</td><td>Desayuno frente al mar y preparación de equipo.</td></tr>
+              <tr><td>10:00</td><td>Snorkel en arrecife cercano con guía local.</td></tr>
+              <tr><td>13:00</td><td>Almuerzo de mariscos en palapa.</td></tr>
+              <tr><td>16:00</td><td>Puesta de sol y paseo por la playa.</td></tr>
+            </tbody>
+          </table>
+          <table id="tabla-montana" class="table align-middle mb-0 itinerary-table" style="display:none;">
+            <thead class="table-light"><tr><th style="width:140px;">Hora</th><th>Actividad</th></tr></thead>
+            <tbody>
+              <tr><td>06:00</td><td>Salida temprana y ascenso por el sendero principal.</td></tr>
+              <tr><td>09:30</td><td>Descanso en mirador e hidratación.</td></tr>
+              <tr><td>12:00</td><td>Almuerzo tipo picnic en el claro del bosque.</td></tr>
+              <tr><td>15:30</td><td>Descenso y visita a cascada cercana.</td></tr>
+            </tbody>
+          </table>
+          <table id="tabla-cultural" class="table align-middle mb-0 itinerary-table" style="display:none;">
+            <thead class="table-light"><tr><th style="width:140px;">Hora</th><th>Actividad</th></tr></thead>
+            <tbody>
+              <tr><td>09:00</td><td>Recorrido guiado por el centro histórico y plazas.</td></tr>
+              <tr><td>11:30</td><td>Visita a museo de arte y exposición temporal.</td></tr>
+              <tr><td>14:00</td><td>Almuerzo típico en mercado local.</td></tr>
+              <tr><td>16:30</td><td>Taller corto de artesanía.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="text-muted small mt-2 mb-0">Tip: usa los botones para alternar entre los itinerarios.</p>
+    </section>
+
+    <section class="mt-5" aria-labelledby="comentarios-title">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-3">
+        <h2 id="comentarios-title" class="h4 mb-0">Comentarios destacados</h2>
+        <button class="btn btn-outline-dark rounded-3" onclick="renderComments()">Re-sortear</button>
+      </div>
+      <div id="contenedor-comentarios" class="row g-4"></div>
+    </section>
+
+    <section class="mt-5" aria-labelledby="contacto-title">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <h2 id="contacto-title" class="h4 mb-3">Contacto</h2>
+          <form id="form-contacto" class="card shadow-sm rounded-4 p-4">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required />
+            </div>
+            <div class="mb-3">
+              <label for="fecha" class="form-label">Fecha de nacimiento</label>
+              <input type="date" class="form-control" id="fecha" name="fecha" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" required />
+              <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary rounded-3">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+      <p>Desarrollado por: Diego Beteta García 9490-22-12878</p>
+      <p>Sergio Enrique Sánchez Sánchez 9490-21-1077</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+
+  <div class="modal fade" id="modalConfirm" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">¡Formulario enviado!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body" id="modalConfirmBody"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

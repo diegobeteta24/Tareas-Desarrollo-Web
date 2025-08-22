@@ -1,0 +1,16 @@
+:root{
+  --brand-start: #0ea5e9;
+  --brand-end:   #6366f1;
+  --brand-dark:  #0b1b2b;
+}
+.gradient-header{background:linear-gradient(135deg,var(--brand-start),var(--brand-end));}
+.op-85{opacity:.85}
+.btn-toggle{background:#fff;border:1px solid rgba(0,0,0,.1);padding:.6rem 1rem;border-radius:1rem;transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease}
+.btn-toggle:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.btn-toggle.active{color:#fff;background:linear-gradient(135deg,var(--brand-start),var(--brand-end));border-color:transparent}
+.itinerary-table tbody tr td:first-child{white-space:nowrap;font-weight:600}
+.table thead th{letter-spacing:.3px}
+.comment-card{border:5px solid rgba(0,0,0,.06);border-radius:1rem;box-shadow:0 4px 6px rgba(0,0,0,.2),0 8px 20px rgba(0,0,0,.15);height:100%}
+.comment-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--brand-start),var(--brand-end));display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:700;letter-spacing:.5px}
+.comment-name{font-weight:700}
+.comment-text{color:#334155}
