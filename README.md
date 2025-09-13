@@ -11,8 +11,6 @@ Sitio informativo sobre cursos finalizados de la carrera. Construido con React, 
 
 Deploy: https://TU-SITIO-NETLIFY.netlify.app
 
-Nota: si el repositorio es privado, se invitó al usuario `ingVillatoroUMG`.
-
 ## Requisitos cubiertos
 
 - Página de Inicio con resumen, carrusel, cards de cursos y navbar/footer.
