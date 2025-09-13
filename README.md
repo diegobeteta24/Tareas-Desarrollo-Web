@@ -9,7 +9,7 @@ Sitio informativo sobre cursos finalizados de la carrera. Construido con React, 
 
 ## Demo en producción (Netlify)
 
-Deploy: [https://tarea2dw25.netlify.app](https://tarea2dw25.netlify.app/)
+Deploy: [https://tarea2dw25.netlify.app/](https://tarea2dw25.netlify.app/)
 
 ## Requisitos cubiertos
 
