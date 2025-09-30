@@ -129,4 +129,7 @@ npm test
 
 ## Autoría y Licencia
 
+- Autor: Diego Antonio Beteta García
+- Carnet: 9490-22-12878
+
 Uso educativo. Puedes modificar libremente este proyecto.

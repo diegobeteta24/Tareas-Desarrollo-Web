@@ -8,7 +8,7 @@
     "test": "jest --runInBand"
   },
   "keywords": [],
-  "author": "",
+  "author": "Diego Antonio Beteta García <9490-22-12878>",
   "license": "ISC",
   "description": "",
   "dependencies": {
