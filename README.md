@@ -119,7 +119,7 @@ npm test
 ## Repositorio y URL desplegada
 
 - Repositorio (rama de entrega): https://github.com/diegobeteta24/Tareas-Desarrollo-Web/tree/feature/users-api
-- URL de producción (Render): https://<tu-servicio>.onrender.com
+- URL de producción (Render): https://users-api-jivr.onrender.com/
 
 ## Notas
 
