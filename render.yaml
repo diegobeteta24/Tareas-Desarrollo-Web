@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: users-api
+    env: node
+    region: oregon
+    plan: free
+    autoDeploy: true
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: .
