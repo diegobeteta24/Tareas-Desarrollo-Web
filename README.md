@@ -345,7 +345,18 @@ Si este proyecto se llevara a producción, se deberían implementar:
 - [ ] Validación de formato de DPI
 - [ ] Requisitos de contraseña segura
 
-## 📄 Licencia
+## � Estado del Deploy
+
+- ✅ **Código subido a GitHub**: Rama `tarea-login-registro`
+- ⏳ **Deploy en Render**: Pendiente de configuración
+- 📦 **Listo para producción**: Configuración completa
+
+### URL del Proyecto en GitHub
+
+🔗 **Repositorio**: [https://github.com/diegobeteta24/Tareas-Desarrollo-Web](https://github.com/diegobeteta24/Tareas-Desarrollo-Web)  
+🌿 **Rama**: `tarea-login-registro`
+
+## �📄 Licencia
 
 Este proyecto fue desarrollado con fines académicos como parte del curso de Desarrollo Web.
 
@@ -355,8 +366,10 @@ Este proyecto fue desarrollado con fines académicos como parte del curso de Des
 Curso: Desarrollo Web  
 Fecha: Octubre 2025
 
----
+**Integrantes**:
+- Diego Beteta García (9490-22-12878)
+- Sergio Enrique Sánchez Sánchez (9490-21-1077)
 
-**Contacto del Repositorio**: [https://github.com/diegobeteta24/Tareas-Desarrollo-Web](https://github.com/diegobeteta24/Tareas-Desarrollo-Web)
+---
 
 Para cualquier duda o consulta sobre el proyecto, crear un issue en el repositorio de GitHub.
