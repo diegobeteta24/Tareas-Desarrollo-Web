@@ -4,13 +4,19 @@ Sistema completo de registro y autenticación de usuarios desarrollado con React
 
 ## 👥 Integrantes del Proyecto
 
-- **Diego Beteta García** - Carnet: 9490-22-12878
+- **Diego## 📊 Estado del Deploy
+
+- ✅ **Código subido a GitHub**: Rama `tarea-login-registro`
+- ✅ **Deploy en Render**: Desplegado y funcionando
+- ✅ **URL de Producción**: [https://tareas-desarrollo-web.onrender.com](https://tareas-desarrollo-web.onrender.com)
+- 📦 **Estado**: Activo y operacionalta García** - Carnet: 9490-22-12878
 - **Sergio Enrique Sánchez Sánchez** - Carnet: 9490-21-1077
 
 ## 🔗 Enlaces del Proyecto
 
 - **Repositorio GitHub**: [https://github.com/diegobeteta24/Tareas-Desarrollo-Web](https://github.com/diegobeteta24/Tareas-Desarrollo-Web)
-- **Sitio Web en Producción**: Pendiente de deploy en Render
+- **Aplicación en Producción (Render)**: [https://tareas-desarrollo-web.onrender.com](https://tareas-desarrollo-web.onrender.com)
+- **API en Producción**: [https://tareas-desarrollo-web.onrender.com/login](https://tareas-desarrollo-web.onrender.com/login)
 - **Desarrollo Local (Frontend)**: `http://localhost:3000`
 - **Desarrollo Local (Backend)**: `http://localhost:5000`
 
@@ -170,7 +176,8 @@ El proyecto ya está configurado para desplegarse en Render con los siguientes c
    - El proceso tomará unos minutos
 
 6. **Accede a tu aplicación**:
-   - Una vez completado, Render te dará una URL como: `https://sistema-login-registro.onrender.com`
+   - Una vez completado, Render te dará una URL
+   - **URL de este proyecto**: [https://tareas-desarrollo-web.onrender.com](https://tareas-desarrollo-web.onrender.com)
    - La aplicación estará lista para usar
 
 ### Notas Importantes para Render
