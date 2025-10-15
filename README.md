@@ -9,7 +9,11 @@ API REST desarrollada con Node.js y Express.js que implementa autenticación med
 
 **🔗 [https://tu-api-jwt.onrender.com](https://tu-api-jwt.onrender.com)**
 
-> ⚠️ **IMPORTANTE:** Debes reemplazar este enlace con la URL real de tu API desplegada en Render antes de entregar la tarea.
+> ⚠️ **IMPORTANTE:** Reemplaza este enlace con tu URL de Render después de desplegar.
+
+## 📦 Repositorio
+
+**GitHub:** [https://github.com/diegobeteta24/Tareas-Desarrollo-Web/tree/jwt](https://github.com/diegobeteta24/Tareas-Desarrollo-Web/tree/jwt)
 
 ---
 
@@ -46,7 +50,9 @@ API REST desarrollada con Node.js y Express.js que implementa autenticación med
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone <url-del-repositorio>
+   git clone https://github.com/diegobeteta24/Tareas-Desarrollo-Web.git
+   cd Tareas-Desarrollo-Web
+   git checkout jwt
    cd JWT
    ```
 
@@ -438,21 +444,44 @@ JWT/
 1. **Crear cuenta en Render:** [https://render.com](https://render.com)
 
 2. **Crear un nuevo Web Service:**
-   - Conecta tu repositorio de GitHub
-   - Selecciona la rama `jwt`
+   - Click en "New +" → "Web Service"
+   - Conecta tu cuenta de GitHub si aún no lo has hecho
+   - Selecciona el repositorio: `diegobeteta24/Tareas-Desarrollo-Web`
+   - Selecciona la rama: `jwt`
+   - Root Directory: `JWT` (muy importante para que encuentre los archivos)
 
 3. **Configurar el servicio:**
+   - **Name:** `jwt-auth-api-diegobeteta` (o el nombre que prefieras)
+   - **Region:** Oregon (US West) - Recomendado para mejor rendimiento
+   - **Branch:** `jwt`
+   - **Root Directory:** `JWT`
+   - **Runtime:** Node
    - **Build Command:** `npm install`
    - **Start Command:** `npm start`
+   - **Instance Type:** Free
 
-4. **Variables de entorno:**
-   - Agregar `JWT_SECRET` con un valor seguro
-   - `PORT` se configura automáticamente en Render
+4. **Variables de entorno (Environment Variables):**
+   - Click en "Advanced" o ve a "Environment" después de crear
+   - Agregar:
+     - **Key:** `JWT_SECRET`
+     - **Value:** `mi_clave_secreta_jwt_2025_super_segura` (o cualquier clave segura)
+   - **Nota:** `PORT` no es necesario, Render lo asigna automáticamente
 
 5. **Desplegar:**
    - Click en "Create Web Service"
-   - Esperar a que el despliegue finalice
-   - Copiar la URL generada y actualizar este README
+   - Esperar 5-10 minutos mientras Render construye y despliega
+   - Una vez completado, copia la URL generada (ejemplo: `https://jwt-auth-api-diegobeteta.onrender.com`)
+   - Actualiza la sección "URL de la API Desplegada" en este README
+
+6. **Verificar el despliegue:**
+   - Visita `https://tu-url.onrender.com` en el navegador
+   - Deberías ver la información de la API
+   - Prueba el endpoint `/login` con Postman o Thunder Client
+
+### ⚠️ Nota sobre el Free Tier de Render
+- Las aplicaciones gratuitas se duermen después de 15 minutos de inactividad
+- La primera solicitud después de dormirse puede tardar 30-60 segundos
+- Es completamente normal y no afecta la funcionalidad
 
 ---
 
