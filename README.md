@@ -7,9 +7,9 @@ API REST desarrollada con Node.js y Express.js que implementa autenticación med
 
 ## 🚀 URL de la API Desplegada
 
-**🔗 [https://tu-api-jwt.onrender.com](https://tu-api-jwt.onrender.com)**
+**🔗 [https://tareas-desarrollo-web-1.onrender.com](https://tareas-desarrollo-web-1.onrender.com)**
 
-> ⚠️ **IMPORTANTE:** Reemplaza este enlace con tu URL de Render después de desplegar.
+> ✅ **API funcionando correctamente en Render**
 
 ## 📦 Repositorio
 
@@ -89,7 +89,7 @@ API REST desarrollada con Node.js y Express.js que implementa autenticación med
 
 ### Base URL
 - **Local:** `http://localhost:3000`
-- **Producción:** `https://tu-api-jwt.onrender.com`
+- **Producción:** `https://tareas-desarrollo-web-1.onrender.com`
 
 ---
 
@@ -378,30 +378,47 @@ DELETE /users/3
 
 ## 🧪 Ejemplos de Uso con cURL
 
-### 1. Login y obtener token
+### Usando la API en Producción (Render)
+
+#### 1. Login y obtener token
+```bash
+curl -X POST https://tareas-desarrollo-web-1.onrender.com/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"juan@example.com","password":"password123"}'
+```
+
+#### 2. Listar usuarios (con token)
+```bash
+curl -X GET https://tareas-desarrollo-web-1.onrender.com/users \
+  -H "Authorization: Bearer TU_TOKEN_AQUI"
+```
+
+#### 3. Actualizar usuario (con token)
+```bash
+curl -X PUT https://tareas-desarrollo-web-1.onrender.com/users/1 \
+  -H "Authorization: Bearer TU_TOKEN_AQUI" \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Nuevo Nombre"}'
+```
+
+#### 4. Eliminar usuario (con token)
+```bash
+curl -X DELETE https://tareas-desarrollo-web-1.onrender.com/users/3 \
+  -H "Authorization: Bearer TU_TOKEN_AQUI"
+```
+
+### Usando la API Localmente
+
+#### 1. Login y obtener token
 ```bash
 curl -X POST http://localhost:3000/login \
   -H "Content-Type: application/json" \
   -d '{"email":"juan@example.com","password":"password123"}'
 ```
 
-### 2. Listar usuarios (con token)
+#### 2. Listar usuarios (con token)
 ```bash
 curl -X GET http://localhost:3000/users \
-  -H "Authorization: Bearer TU_TOKEN_AQUI"
-```
-
-### 3. Actualizar usuario (con token)
-```bash
-curl -X PUT http://localhost:3000/users/1 \
-  -H "Authorization: Bearer TU_TOKEN_AQUI" \
-  -H "Content-Type: application/json" \
-  -d '{"name":"Nuevo Nombre"}'
-```
-
-### 4. Eliminar usuario (con token)
-```bash
-curl -X DELETE http://localhost:3000/users/1 \
   -H "Authorization: Bearer TU_TOKEN_AQUI"
 ```
 
