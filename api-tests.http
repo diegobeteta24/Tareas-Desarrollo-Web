@@ -1,0 +1,52 @@
+# Pruebas de la API - JWT Authentication
+# Puedes usar estas peticiones con herramientas como Postman, Insomnia o Thunder Client
+
+## 1. Verificar que el servidor esté corriendo
+GET http://localhost:3000
+
+### 2. Login - Obtener Token JWT
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "juan@example.com",
+  "password": "password123"
+}
+
+### 3. Obtener usuario por ID (sin token)
+GET http://localhost:3000/users/1
+
+### 4. Crear un nuevo usuario
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Ana Martínez",
+  "email": "ana@example.com",
+  "password": "password123"
+}
+
+### 5. Listar todos los usuarios (REQUIERE TOKEN)
+# Primero haz login y copia el token, luego reemplaza "TU_TOKEN_AQUI"
+GET http://localhost:3000/users
+Authorization: Bearer TU_TOKEN_AQUI
+
+### 6. Actualizar usuario (REQUIERE TOKEN)
+PUT http://localhost:3000/users/1
+Authorization: Bearer TU_TOKEN_AQUI
+Content-Type: application/json
+
+{
+  "name": "Juan Pérez Actualizado",
+  "email": "juan.nuevo@example.com"
+}
+
+### 7. Eliminar usuario (REQUIERE TOKEN)
+DELETE http://localhost:3000/users/3
+Authorization: Bearer TU_TOKEN_AQUI
+
+### NOTAS:
+# - El token JWT expira en 30 segundos
+# - Si recibes error 401 "Token expirado", haz login nuevamente
+# - Usuarios de prueba: juan@example.com, maria@example.com, carlos@example.com
+# - Contraseña para todos: password123
